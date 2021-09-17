@@ -1,0 +1,161 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-25T22:14:45.126Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.setUpScenario()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.runBeforeSteps()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Wikipedia search title verification",
+        "description": "",
+        "id": "wikipedia-search-feature;wikipedia-search-title-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 1695000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4768000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on Wikipedia home page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Wikipedia_StepDefinitions.user_is_on_wikipedia_home_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user types \"Steve Jobs\" in the wiki search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Steve Jobs\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Wikipedia_StepDefinitions.user_types_in_the_wiki_search_box(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1249000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks wiki search button",
+            "match": {
+              "location": "com.cybertek.step_definitions.Wikipedia_StepDefinitions.user_clicks_wiki_search_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 3000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user sees \"Steve Jobs\" in the wiki title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Steve Jobs\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.cybertek.step_definitions.Wikipedia_StepDefinitions.user_sees_in_the_wiki_title(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Asterisks"
+          }
+        ]
+      }
+    ],
+    "name": "Wikipedia search feature",
+    "description": "  As a user, I should be able to search terms and see related results",
+    "id": "wikipedia-search-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/wikepediaSearch.feature",
+    "tags": []
+  }
+]
